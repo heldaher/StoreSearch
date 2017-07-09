@@ -12,6 +12,7 @@
 		BB6F432D1F114CEC007D2769 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6F432B1F114CEC007D2769 /* Main.storyboard */; };
 		BB6F432F1F114CEC007D2769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6F432E1F114CEC007D2769 /* Assets.xcassets */; };
 		BB6F43321F114CEC007D2769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6F43301F114CEC007D2769 /* LaunchScreen.storyboard */; };
+		BB6F433A1F11D3C7007D2769 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6F43391F11D3C7007D2769 /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BB6F432E1F114CEC007D2769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB6F43311F114CEC007D2769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB6F43331F114CEC007D2769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB6F43391F11D3C7007D2769 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +56,13 @@
 		BB6F43261F114CEC007D2769 /* StoreSearch */ = {
 			isa = PBXGroup;
 			children = (
-				BB6F43271F114CEC007D2769 /* AppDelegate.swift */,
-				BB6F43291F114CEC007D2769 /* SearchViewController.swift */,
-				BB6F432B1F114CEC007D2769 /* Main.storyboard */,
 				BB6F432E1F114CEC007D2769 /* Assets.xcassets */,
-				BB6F43301F114CEC007D2769 /* LaunchScreen.storyboard */,
 				BB6F43331F114CEC007D2769 /* Info.plist */,
+				BB6F43271F114CEC007D2769 /* AppDelegate.swift */,
+				BB6F43391F11D3C7007D2769 /* SearchResult.swift */,
+				BB6F43291F114CEC007D2769 /* SearchViewController.swift */,
+				BB6F43301F114CEC007D2769 /* LaunchScreen.storyboard */,
+				BB6F432B1F114CEC007D2769 /* Main.storyboard */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB6F432A1F114CEC007D2769 /* SearchViewController.swift in Sources */,
+				BB6F433A1F11D3C7007D2769 /* SearchResult.swift in Sources */,
 				BB6F43281F114CEC007D2769 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
