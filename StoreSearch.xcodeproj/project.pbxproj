@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BB43D2D41F2F890300C95CA1 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB43D2D31F2F890300C95CA1 /* UIImageView+DownloadImage.swift */; };
+		BB43D2D61F2FDFBA00C95CA1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB43D2D51F2FDFBA00C95CA1 /* DetailViewController.swift */; };
+		BB43D2D81F2FE3C700C95CA1 /* DimmingPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB43D2D71F2FE3C700C95CA1 /* DimmingPresentationController.swift */; };
 		BB6F43281F114CEC007D2769 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6F43271F114CEC007D2769 /* AppDelegate.swift */; };
 		BB6F432A1F114CEC007D2769 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6F43291F114CEC007D2769 /* SearchViewController.swift */; };
 		BB6F432D1F114CEC007D2769 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6F432B1F114CEC007D2769 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		BB43D2D31F2F890300C95CA1 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		BB43D2D51F2FDFBA00C95CA1 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BB43D2D71F2FE3C700C95CA1 /* DimmingPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationController.swift; sourceTree = "<group>"; };
 		BB6F43241F114CEC007D2769 /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB6F43271F114CEC007D2769 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB6F43291F114CEC007D2769 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 				BB43D2D31F2F890300C95CA1 /* UIImageView+DownloadImage.swift */,
 				BB6F43391F11D3C7007D2769 /* SearchResult.swift */,
 				BB6F43291F114CEC007D2769 /* SearchViewController.swift */,
+				BB43D2D51F2FDFBA00C95CA1 /* DetailViewController.swift */,
+				BB43D2D71F2FE3C700C95CA1 /* DimmingPresentationController.swift */,
 				BB6F432B1F114CEC007D2769 /* Main.storyboard */,
 			);
 			path = StoreSearch;
@@ -155,8 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB6F432A1F114CEC007D2769 /* SearchViewController.swift in Sources */,
+				BB43D2D81F2FE3C700C95CA1 /* DimmingPresentationController.swift in Sources */,
 				BB6F433A1F11D3C7007D2769 /* SearchResult.swift in Sources */,
 				BB6F433E1F13D49D007D2769 /* SearchResultCell.swift in Sources */,
+				BB43D2D61F2FDFBA00C95CA1 /* DetailViewController.swift in Sources */,
 				BB6F43281F114CEC007D2769 /* AppDelegate.swift in Sources */,
 				BB43D2D41F2F890300C95CA1 /* UIImageView+DownloadImage.swift in Sources */,
 			);
