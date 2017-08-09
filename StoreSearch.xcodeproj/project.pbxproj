@@ -20,12 +20,14 @@
 		BB6F432D1F114CEC007D2769 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6F432B1F114CEC007D2769 /* Main.storyboard */; };
 		BB6F432F1F114CEC007D2769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6F432E1F114CEC007D2769 /* Assets.xcassets */; };
 		BB6F433A1F11D3C7007D2769 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6F43391F11D3C7007D2769 /* SearchResult.swift */; };
-		BB6F433C1F13CE39007D2769 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6F433B1F13CE39007D2769 /* SearchResultCell.xib */; };
 		BB6F433E1F13D49D007D2769 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6F433D1F13D49D007D2769 /* SearchResultCell.swift */; };
-		BB6F43401F1411EE007D2769 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6F433F1F1411EE007D2769 /* NothingFoundCell.xib */; };
-		BB6F43421F1E8FBE007D2769 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB6F43411F1E8FBE007D2769 /* LoadingCell.xib */; };
 		BBA12A641F38C2AE007C12E8 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA12A631F38C2AE007C12E8 /* Search.swift */; };
 		BBA12A661F38C42A007C12E8 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA12A651F38C42A007C12E8 /* Placeholder.swift */; };
+		BBA12A671F3A89C7007C12E8 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA12A691F3A89C7007C12E8 /* NothingFoundCell.xib */; };
+		BBA12A6B1F3A8DF6007C12E8 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA12A6D1F3A8DF6007C12E8 /* LoadingCell.xib */; };
+		BBA12A721F3A9146007C12E8 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA12A741F3A9146007C12E8 /* SearchResultCell.xib */; };
+		BBA12A771F3A9EE1007C12E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBA12A751F3A9EE1007C12E8 /* Localizable.strings */; };
+		BBA12A7B1F3AAD06007C12E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBA12A7D1F3AAD06007C12E8 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,12 +46,19 @@
 		BB6F432E1F114CEC007D2769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB6F43331F114CEC007D2769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB6F43391F11D3C7007D2769 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
-		BB6F433B1F13CE39007D2769 /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		BB6F433D1F13D49D007D2769 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
-		BB6F433F1F1411EE007D2769 /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
-		BB6F43411F1E8FBE007D2769 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		BBA12A631F38C2AE007C12E8 /* Search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		BBA12A651F38C42A007C12E8 /* Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		BBA12A681F3A89C7007C12E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NothingFoundCell.xib; sourceTree = "<group>"; };
+		BBA12A6A1F3A8A58007C12E8 /* nl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = nl; path = nl.lproj/NothingFoundCell.xib; sourceTree = "<group>"; };
+		BBA12A6C1F3A8DF6007C12E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoadingCell.xib; sourceTree = "<group>"; };
+		BBA12A6F1F3A8E56007C12E8 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LoadingCell.strings; sourceTree = "<group>"; };
+		BBA12A711F3A8FF2007C12E8 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		BBA12A731F3A9146007C12E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SearchResultCell.xib; sourceTree = "<group>"; };
+		BBA12A761F3A9EE1007C12E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BBA12A781F3A9FDC007C12E8 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BBA12A7C1F3AAD06007C12E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BBA12A7E1F3AAD08007C12E8 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,15 +91,17 @@
 		BB6F43261F114CEC007D2769 /* StoreSearch */ = {
 			isa = PBXGroup;
 			children = (
+				BBA12A751F3A9EE1007C12E8 /* Localizable.strings */,
 				BB6F432E1F114CEC007D2769 /* Assets.xcassets */,
 				BB6F43331F114CEC007D2769 /* Info.plist */,
+				BBA12A7D1F3AAD06007C12E8 /* InfoPlist.strings */,
 				BB6F43271F114CEC007D2769 /* AppDelegate.swift */,
 				BB1B9E1E1F327DDD00008543 /* GradientView.swift */,
 				BBA12A631F38C2AE007C12E8 /* Search.swift */,
 				BB6F433D1F13D49D007D2769 /* SearchResultCell.swift */,
-				BB6F433B1F13CE39007D2769 /* SearchResultCell.xib */,
-				BB6F433F1F1411EE007D2769 /* NothingFoundCell.xib */,
-				BB6F43411F1E8FBE007D2769 /* LoadingCell.xib */,
+				BBA12A741F3A9146007C12E8 /* SearchResultCell.xib */,
+				BBA12A691F3A89C7007C12E8 /* NothingFoundCell.xib */,
+				BBA12A6D1F3A8DF6007C12E8 /* LoadingCell.xib */,
 				BB43D2D31F2F890300C95CA1 /* UIImageView+DownloadImage.swift */,
 				BB6F43391F11D3C7007D2769 /* SearchResult.swift */,
 				BBA12A651F38C42A007C12E8 /* Placeholder.swift */,
@@ -150,6 +161,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
 			);
 			mainGroup = BB6F431B1F114CEC007D2769;
 			productRefGroup = BB6F43251F114CEC007D2769 /* Products */;
@@ -167,9 +179,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB6F432F1F114CEC007D2769 /* Assets.xcassets in Resources */,
-				BB6F43421F1E8FBE007D2769 /* LoadingCell.xib in Resources */,
-				BB6F433C1F13CE39007D2769 /* SearchResultCell.xib in Resources */,
-				BB6F43401F1411EE007D2769 /* NothingFoundCell.xib in Resources */,
+				BBA12A7B1F3AAD06007C12E8 /* InfoPlist.strings in Resources */,
+				BBA12A771F3A9EE1007C12E8 /* Localizable.strings in Resources */,
+				BBA12A6B1F3A8DF6007C12E8 /* LoadingCell.xib in Resources */,
+				BBA12A721F3A9146007C12E8 /* SearchResultCell.xib in Resources */,
+				BBA12A671F3A89C7007C12E8 /* NothingFoundCell.xib in Resources */,
 				BB6F432D1F114CEC007D2769 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,8 +219,53 @@
 			isa = PBXVariantGroup;
 			children = (
 				BB6F432C1F114CEC007D2769 /* Base */,
+				BBA12A711F3A8FF2007C12E8 /* nl */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BBA12A691F3A89C7007C12E8 /* NothingFoundCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBA12A681F3A89C7007C12E8 /* en */,
+				BBA12A6A1F3A8A58007C12E8 /* nl */,
+			);
+			name = NothingFoundCell.xib;
+			sourceTree = "<group>";
+		};
+		BBA12A6D1F3A8DF6007C12E8 /* LoadingCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBA12A6C1F3A8DF6007C12E8 /* Base */,
+				BBA12A6F1F3A8E56007C12E8 /* nl */,
+			);
+			name = LoadingCell.xib;
+			sourceTree = "<group>";
+		};
+		BBA12A741F3A9146007C12E8 /* SearchResultCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBA12A731F3A9146007C12E8 /* Base */,
+			);
+			name = SearchResultCell.xib;
+			sourceTree = "<group>";
+		};
+		BBA12A751F3A9EE1007C12E8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBA12A761F3A9EE1007C12E8 /* en */,
+				BBA12A781F3A9FDC007C12E8 /* nl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		BBA12A7D1F3AAD06007C12E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBA12A7C1F3AAD06007C12E8 /* Base */,
+				BBA12A7E1F3AAD08007C12E8 /* nl */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -216,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -266,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

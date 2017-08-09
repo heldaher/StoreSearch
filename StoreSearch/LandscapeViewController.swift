@@ -64,7 +64,7 @@ class LandscapeViewController: UIViewController {
     
     private func showNothingFoundLabel() {
         let label = UILabel(frame: CGRect.zero)
-        label.text = "Nothing Found"
+        label.text = NSLocalizedString("Nothing Found", comment: "Nothing found label")
         label.textColor = UIColor.white
         label.backgroundColor = UIColor.clear
         
