@@ -14,9 +14,11 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
-    let search = Search()
+    weak var splitViewDetail: DetailViewController?
     
     var landscapeViewController: LandscapeViewController?
+    
+    let search = Search()
     
     struct TableViewCellIdentifiers {
         static let searchResultCell = "SearchResultCell"
@@ -26,7 +28,6 @@ class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchBar.becomeFirstResponder()
         
         tableView.contentInset = UIEdgeInsets(top: 108, left: 0, bottom: 0, right: 0)
         
@@ -40,6 +41,12 @@ class SearchViewController: UIViewController {
         tableView.register(cellNib, forCellReuseIdentifier: TableViewCellIdentifiers.loadingCell)
         
         tableView.rowHeight = 80
+        
+        title = NSLocalizedString("Search", comment: "Split-view master button")
+        
+        if UIDevice.current.userInterfaceIdiom != .pad {
+            searchBar.becomeFirstResponder()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -105,6 +112,14 @@ class SearchViewController: UIViewController {
         }
     }
     
+    func hideMasterPane() {
+        UIView.animate(withDuration: 0.25, animations: {
+            self.splitViewController!.preferredDisplayMode = .primaryHidden
+        }, completion: { _ in
+            self.splitViewController!.preferredDisplayMode = .automatic
+        })
+    }
+    
     func showNetworkError() {
         let alert = UIAlertController(
             title: NSLocalizedString("Whoops...", comment: "Error alert title"),
@@ -124,6 +139,7 @@ class SearchViewController: UIViewController {
                 let indexPath = sender as! IndexPath
                 let searchResult = list[indexPath.row]
                 detailViewController.searchResult = searchResult
+                detailViewController.isPopUp = true
             }
         }
     }
@@ -202,8 +218,19 @@ extension SearchViewController: UITableViewDelegate {
         
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        performSegue(withIdentifier: "ShowDetail", sender: indexPath)
+        searchBar.resignFirstResponder()
+        
+        if view.window!.rootViewController!.traitCollection.horizontalSizeClass == .compact {
+            tableView.deselectRow(at: indexPath, animated: true)
+            performSegue(withIdentifier: "ShowDetail", sender: indexPath)
+        } else {
+            if case .results(let list) = search.state {
+                splitViewDetail?.searchResult = list[indexPath.row]
+            }
+            if splitViewController!.displayMode != .allVisible {
+                hideMasterPane()
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView,

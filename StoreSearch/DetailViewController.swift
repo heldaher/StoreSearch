@@ -10,8 +10,16 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var searchResult: SearchResult!
     var downloadTask: URLSessionDownloadTask?
+    var isPopUp = false
+    
+    var searchResult: SearchResult! {
+        didSet {
+            if isViewLoaded {
+                updateUI()
+            }
+        }
+    }
     
     @IBOutlet weak var popupView: UIView!
     @IBOutlet weak var artworkImageView: UIImageView!
@@ -37,16 +45,23 @@ class DetailViewController: UIViewController {
         view.tintColor = UIColor(red: 20/255, green: 160/255, blue: 160/255, alpha: 1)
         popupView.layer.cornerRadius = 10
         
-        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(close))
-        gestureRecognizer.cancelsTouchesInView = false
-        gestureRecognizer.delegate = self
-        view.addGestureRecognizer(gestureRecognizer)
+        if isPopUp {
+            let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(close))
+            gestureRecognizer.cancelsTouchesInView = false
+            gestureRecognizer.delegate = self
+            view.addGestureRecognizer(gestureRecognizer)
+            view.backgroundColor = UIColor.clear
+        } else {
+            view.backgroundColor = UIColor(patternImage: UIImage(named: "LandscapeBackground")!)
+            popupView.isHidden = true
+            if let displayName = Bundle.main.localizedInfoDictionary?["CFBundleDisplayName"] as? String {
+                title = displayName
+            }
+        }
         
         if searchResult != nil {
             updateUI()
         }
-        
-        view.backgroundColor = UIColor.clear
     }
 
     override func didReceiveMemoryWarning() {
@@ -95,6 +110,8 @@ class DetailViewController: UIViewController {
         if let largeURL = URL(string: searchResult.artworkLargeURL) {
             downloadTask = artworkImageView.loadImage(url: largeURL)
         }
+        
+        popupView.isHidden = false
     }
     
     enum AnimationStyle {
