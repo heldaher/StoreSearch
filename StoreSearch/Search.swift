@@ -57,7 +57,8 @@ class Search {
                 self.state = .notSearchedYet
                 var success = false
                 
-                if let error = error as? NSError, error.code == -999 {
+                //potentially may want to change to as? NSError
+                if let error = error as NSError?, error.code == -999 {
                     return // Search was cancelled
                 }
                 

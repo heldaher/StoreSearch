@@ -28,6 +28,7 @@
 		BBA12A721F3A9146007C12E8 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA12A741F3A9146007C12E8 /* SearchResultCell.xib */; };
 		BBA12A771F3A9EE1007C12E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBA12A751F3A9EE1007C12E8 /* Localizable.strings */; };
 		BBA12A7B1F3AAD06007C12E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBA12A7D1F3AAD06007C12E8 /* InfoPlist.strings */; };
+		BBA12A801F411BFD007C12E8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA12A7F1F411BFD007C12E8 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		BBA12A781F3A9FDC007C12E8 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BBA12A7C1F3AAD06007C12E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BBA12A7E1F3AAD08007C12E8 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BBA12A7F1F411BFD007C12E8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				BBA12A651F38C42A007C12E8 /* Placeholder.swift */,
 				BB6F43291F114CEC007D2769 /* SearchViewController.swift */,
 				BB43D2D51F2FDFBA00C95CA1 /* DetailViewController.swift */,
+				BBA12A7F1F411BFD007C12E8 /* MenuViewController.swift */,
 				BB1B9E241F34EF7300008543 /* LandscapeViewController.swift */,
 				BB43D2D71F2FE3C700C95CA1 /* DimmingPresentationController.swift */,
 				BB1B9E201F32840F00008543 /* BounceAnimationController.swift */,
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBA12A641F38C2AE007C12E8 /* Search.swift in Sources */,
+				BBA12A801F411BFD007C12E8 /* MenuViewController.swift in Sources */,
 				BB6F432A1F114CEC007D2769 /* SearchViewController.swift in Sources */,
 				BB43D2D81F2FE3C700C95CA1 /* DimmingPresentationController.swift in Sources */,
 				BB1B9E271F35064000008543 /* FadeOutAnimationController.swift in Sources */,

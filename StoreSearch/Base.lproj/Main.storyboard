@@ -303,6 +303,11 @@
                                     <constraint firstItem="u9t-Jp-0ra" firstAttribute="baseline" secondItem="daF-nq-Iaz" secondAttribute="baseline" id="wU8-1Q-6xF"/>
                                     <constraint firstItem="u9t-Jp-0ra" firstAttribute="leading" secondItem="daF-nq-Iaz" secondAttribute="trailing" constant="20" id="xGh-jQ-5gK"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="subviews">
+                                        <exclude reference="zq1-r2-bDG"/>
+                                    </mask>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="subviews">
                                         <exclude reference="zq1-r2-bDG"/>
@@ -312,11 +317,21 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="qfy-go-STi" firstAttribute="centerY" secondItem="jG5-iE-QHv" secondAttribute="centerY" id="2dj-7M-qYr"/>
+                            <constraint firstItem="qfy-go-STi" firstAttribute="centerY" secondItem="jG5-iE-QHv" secondAttribute="centerY" id="2dj-7M-qYr">
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="qfy-go-STi" firstAttribute="centerX" secondItem="jG5-iE-QHv" secondAttribute="centerX" id="ETN-YD-06T"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3sM-yY-pLa"/>
+                    <navigationItem key="navigationItem" id="3sM-yY-pLa">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="6rJ-L1-6Nl">
+                            <connections>
+                                <segue destination="1z8-Rv-lRl" kind="popoverPresentation" identifier="ShowMenu" popoverAnchorBarButtonItem="6rJ-L1-6Nl" id="ELH-XI-y3q">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="artistNameLabel" destination="vi9-Wq-oY7" id="7dz-C0-Asf"/>
                         <outlet property="artworkImageView" destination="xGL-cI-aHp" id="pgB-2E-uID"/>
@@ -330,6 +345,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="878-zo-tSZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1024" y="536"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="9Zv-TJ-SZr">
+            <objects>
+                <tableViewController id="1z8-Rv-lRl" customClass="MenuViewController" customModule="StoreSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="2AB-nD-dXT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="qj5-3Q-Xtl">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="3fW-dv-EiO" style="IBUITableViewCellStyleDefault" id="Dea-RV-bsc">
+                                        <rect key="frame" x="0.0" y="35" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dea-RV-bsc" id="M7D-Qf-RYs">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Send Support Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3fW-dv-EiO">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="1z8-Rv-lRl" id="xgx-fO-JVq"/>
+                            <outlet property="delegate" destination="1z8-Rv-lRl" id="T4Q-IO-Ry8"/>
+                        </connections>
+                    </tableView>
+                    <value key="contentSizeForViewInPopover" type="size" width="320" height="204"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ae-cw-zNd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929" y="536"/>
         </scene>
     </scenes>
     <resources>
